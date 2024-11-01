@@ -6,6 +6,8 @@
     <title>Game Developer Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,24 +15,27 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"><i class="fas fa-gamepad mr-2"></i>Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Games</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user mr-1"></i>About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-gamepad mr-1"></i>Games</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope mr-1"></i>Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Header Section -->
     <header class="jumbotron text-center bg-primary text-white">
-        <h1 class="display-4">Welcome to My Game Portfolio</h1>
-        <p class="lead">Check out my games and download your favorites!</p>
-        <a href="#projects" class="btn btn-warning btn-lg">Explore My Games</a>
+        <h1 class="display-4"><i class="fas fa-robot mr-2"></i>Welcome to My Game Portfolio</h1>
+        <p class="lead"><i class="fas fa-rocket mr-2"></i>Check out my games and download your favorites!</p>
+        <a href="#projects" class="btn btn-warning btn-lg">
+            <i class="fas fa-play mr-2"></i>Explore My Games
+        </a>
     </header>
 
     <!-- About Section -->
@@ -39,25 +44,27 @@
           <!-- Profile Image -->
           <img src="images/portfolio-profile-pic-1.jpg" alt="Profile Image" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px;">
           <!-- About Text -->
-          <h2>About Me</h2>
-          <p>Hi! I’m Polycarp Atalor a game developer passionate about creating fun and exciting experiences.</p>
+          <h2><i class="fas fa-info-circle mr-2"></i>About Me</h2>
+          <p>Hi! I’m Polycarp Atalor, a game developer passionate about creating fun and exciting experiences.</p>
       </div>
     </section>
 
 
     <!-- Games Section -->
     <section id="projects" class="container py-5">
-        <h2 class="text-center">Games</h2>
+        <h2 class="text-center"><i class="fas fa-gamepad mr-2"></i>Games</h2>
           <div class="row">
             <!-- Blog-style Game Card -->
             <div class="col-md-6">
                 <div class="card mb-4">
                     <img src="images/Iwaju.jpg" class="card-img-top" alt="Game 1">
                     <div class="card-body">
-                        <h5 class="card-title">Disney Iwaju : Rising Chef</h5>
+                        <h5 class="card-title"><i class="fas fa-fire mr-2"></i>Disney Iwaju: Rising Chef</h5>
                         <p class="card-text">Inspired by the Disney+ original animated series, Iwájú, Disney Iwájú: Rising Chef takes
-                           you into the fast paced world of Nigerian cuisine. As a new chef in Lagos, enter into the fun but..</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.disney.jollofkitchen" class="btn btn-primary" target="_blank">Download Game</a>
+                           you into the fast-paced world of Nigerian cuisine. As a new chef in Lagos, enter into the fun but...</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.disney.jollofkitchen" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download mr-2"></i>Download Game
+                        </a>
                     </div>
                 </div>
             </div>
@@ -65,46 +72,54 @@
                 <div class="card mb-4">
                     <img src="images/chacha-war.jpg" class="card-img-top" alt="Game 2">
                     <div class="card-body">
-                        <h5 class="card-title">Cha Cha War</h5>
+                        <h5 class="card-title"><i class="fas fa-fist-raised mr-2"></i>Cha Cha War</h5>
                         <p class="card-text">Cha Cha War is a game based on the classic rules of Rock, Paper, Scissors: click on "Fight," 
                           make your choice, and wait for the timer to end—win three rounds to claim victory!</p>
-                        <a href="https://littlepitch.itch.io/cha-cha-war" class="btn btn-primary" target="_blank">Download Game</a>
+                        <a href="https://littlepitch.itch.io/cha-cha-war" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download mr-2"></i>Download Game
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
               <div class="card mb-4">
-                  <img src="images/kekerush-image1.jpg" class="card-img-top" alt="Game 2">
+                  <img src="images/kekerush-image1.jpg" class="card-img-top" alt="Game 3">
                   <div class="card-body">
-                      <h5 class="card-title">Kekerush</h5>
+                      <h5 class="card-title"><i class="fas fa-car mr-2"></i>Kekerush</h5>
                       <p class="card-text">Keke Rush is a fun 2D-endless driving game where players journey through a metropolitan city 
-                        with hilly paths and enjoy the breath taking view from the top.</p>
-                      <a href="https://maliyo.itch.io/keke-rush" class="btn btn-primary" target="_blank">Download Game</a>
+                        with hilly paths and enjoy the breathtaking view from the top.</p>
+                      <a href="https://maliyo.itch.io/keke-rush" class="btn btn-primary" target="_blank">
+                          <i class="fas fa-download mr-2"></i>Download Game
+                      </a>
                   </div>
               </div>
           </div>
 
           <div class="col-md-6">
             <div class="card mb-4">
-                <img src="images/mutoa-racing.jpg" class="card-img-top" alt="Game 2">
+                <img src="images/mutoa-racing.jpg" class="card-img-top" alt="Game 4">
                 <div class="card-body">
-                    <h5 class="card-title">Mutoa Racing</h5>
-                    <p class="card-text">Mouta racing was created based on a futuristic view of Nigeria and Cameroon. We dive 
+                    <h5 class="card-title"><i class="fas fa-tachometer-alt mr-2"></i>Mutoa Racing</h5>
+                    <p class="card-text">Mutoa Racing was created based on a futuristic view of Nigeria and Cameroon. We dive 
                       into exploring how racing would look like in both countries in a century time.</p>
-                    <a href="https://example.com/download-game2" class="btn btn-primary" target="_blank">Download Game</a>
+                    <a href="https://example.com/download-game2" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download mr-2"></i>Download Game
+                    </a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6">
           <div class="card mb-4">
-              <img src="images/the-beast.jpg" class="card-img-top" alt="Game 2">
+              <img src="images/the-beast.jpg" class="card-img-top" alt="Game 5">
               <div class="card-body">
-                  <h5 class="card-title">The Beast</h5>
+                  <h5 class="card-title"><i class="fas fa-monster-grin mr-2"></i>The Beast</h5>
                   <p class="card-text">A mythical creature comes out of nowhere into a busy township in Africa and started chasing 
-                    civilians trying to eat them up. Turns out the mythical creature is a beast and the player is the main target</p>
-                  <a href="https://maliyo.itch.io/the-beast" class="btn btn-primary" target="_blank">Download Game</a>
+                    civilians trying to eat them up. Turns out the mythical creature is a beast and the player is the main target.</p>
+                  <a href="https://maliyo.itch.io/the-beast" class="btn btn-primary" target="_blank">
+                      <i class="fas fa-download mr-2"></i>Download Game
+                  </a>
               </div>
           </div>
       </div>
@@ -114,20 +129,24 @@
     <!-- Footer Section -->
     <footer class="bg-dark text-white py-4">
       <div class="container text-center">
-          <h5>Contact Me</h5>
+          <h5><i class="fas fa-envelope mr-2"></i>Contact Me</h5>
           <p>If you'd like to get in touch, feel free to use one of the options below:</p>
 
           <!-- Clickable Email Link -->
-          <p>Email: <a href="mailto:polycarpatalor@gmail.com" class="text-warning">polycarpatalor@gmail.com</a></p>
+          <p>Email: <a href="mailto:polycarpatalor@gmail.com" class="text-warning"><i class="fas fa-paper-plane mr-1"></i>polycarpatalor@gmail.com</a></p>
 
           <!-- Social Media Links -->
           <div class="my-3">
-              <a href="https://www.linkedin.com/in/polyatal/" target="_blank" class="btn btn-outline-light mx-1">LinkedIn</a>
-              <a href="https://github.com/justPoly" target="_blank" class="btn btn-outline-light mx-1">GitHub</a>
+              <a href="https://www.linkedin.com/in/polyatal/" target="_blank" class="btn btn-outline-light mx-1">
+                  <i class="fab fa-linkedin mr-1"></i>LinkedIn
+              </a>
+              <a href="https://github.com/justPoly" target="_blank" class="btn btn-outline-light mx-1">
+                  <i class="fab fa-github mr-1"></i>GitHub
+              </a>
           </div>
 
           <!-- Tawk.to Chat Widget -->
-          <p>Prefer real-time messaging? Chat with me!</p>
+          <p><i class="fas fa-comments mr-2"></i>Prefer real-time messaging? Chat with me!</p>
 
           <!-- Tawk.to Embed Script -->
           <script type="text/javascript">
