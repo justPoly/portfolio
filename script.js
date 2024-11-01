@@ -1,22 +1,18 @@
-  const triggers = document.querySelectorAll('a');
-  const highlight = document.createElement('span');
-  highlight.classList.add('highlight');
-  document.body.appendChild(highlight);
+// Initialize EmailJS
+(function() {
+  emailjs.init("YOUR_USER_ID");
+})();
 
-  function highlightLink() {
-    const linkCoords = this.getBoundingClientRect();
-    console.log(linkCoords);
-    const coords = {
-      width: linkCoords.width,
-      height: linkCoords.height,
-      top: linkCoords.top + window.scrollY,
-      left: linkCoords.left + window.scrollX
-    };
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-    highlight.style.width = `${coords.width}px`;
-    highlight.style.height = `${coords.height}px`;
-    highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
-
-  }
-
-  triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+  // Send email
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      .then(function() {
+          alert('Message sent successfully!');
+          document.getElementById('contact-form').reset();
+      }, function(error) {
+          alert('Oops! Something went wrong. Please try again.');
+          console.log('Failed to send message:', error);
+      });
+});
